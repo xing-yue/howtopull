@@ -1,5 +1,9 @@
 package junit5;
 
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtensionContext;
@@ -16,7 +20,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 public class TestParam {
-
+    @Test
+    @Feature("my  test2")
+    @Severity(SeverityLevel.CRITICAL)
+    @Step
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
     void testWithValueSource(int argument) {

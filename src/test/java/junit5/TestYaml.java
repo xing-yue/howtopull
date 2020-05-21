@@ -3,6 +3,10 @@ package junit5;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -15,6 +19,10 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestYaml {
+    @Test
+    @Feature("my  test3")
+    @Severity(SeverityLevel.CRITICAL)
+    @Step
     @ParameterizedTest
     @MethodSource
     public void testddt(String raw) {

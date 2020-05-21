@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 
 public class TestAssertion {
     @Test
-    @Feature("Some feature")
+    @Feature("my  assertAll")
     @Severity(SeverityLevel.CRITICAL)
     @Step
     void assertion() {

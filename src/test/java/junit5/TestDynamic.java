@@ -17,14 +17,18 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 
-import org.junit.jupiter.api.DynamicNode;
-import org.junit.jupiter.api.DynamicTest;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.TestFactory;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.function.ThrowingConsumer;
 
 class DynamicTestsDemo {
-
+    @Test
+    @Feature("my  test1")
+    @Severity(SeverityLevel.CRITICAL)
+    @Step
     public boolean isPalindrome(String str){
         return true;
     }

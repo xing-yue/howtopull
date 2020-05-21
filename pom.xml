@@ -22,23 +22,8 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.9.8</version>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-yaml</artifactId>
-            <version>2.9.9</version>
-        </dependency>
 
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-junit5</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
+
 
 
     </dependencies>
@@ -56,8 +41,8 @@
                     </argLine>
                     <systemProperties>
                         <property>
-                            <name>junit.jupiter.extensions.autodetection.enabled</name>
-                            <value>D:\HogwartsJava3-master\target\surefire-reports</value>
+                            <name>allure.results.directory</name>
+                            <value>./allure-results</value>
                         </property>
                     </systemProperties>
                 </configuration>
